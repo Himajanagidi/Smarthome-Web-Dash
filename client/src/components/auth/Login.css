@@ -1,0 +1,175 @@
+/* src/components/Login.css */
+
+/* Reset some basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: rgb(23, 23, 31);
+    color: #ecf0f1;
+  }
+  
+  .navbar-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3498db
+  }
+  
+  .login-button {
+    padding: 0.5rem 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(23, 23, 31);
+  }
+  
+  .dashboard-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Styles */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(23, 23, 31);
+    color: #ecf0f1;
+  }
+  
+  /* Modal Styles */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+  }
+  
+  .modal-title {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #2c3e50;
+  }
+  
+  .modal-form .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .modal-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #34495e;
+  }
+  
+  .modal-form input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .modal-form input:focus {
+    border-color: #3498db;
+    outline: none;
+  }
+  
+  .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+  
+  .submit-button,
+  .cancel-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button {
+    background-color: #3498db;
+    color: #fff;
+  }
+  
+  .submit-button:hover {
+    background-color: #1e8449;
+  }
+  
+  .cancel-button {
+    background-color: #95a5a6;
+    color: #fff;
+  }
+  
+  .cancel-button:hover {
+    background-color: #7f8c8d;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 600px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-title {
+      margin-bottom: 0.5rem;
+    }
+  
+    .modal-content {
+      padding: 1.5rem;
+    }
+  }
+  
