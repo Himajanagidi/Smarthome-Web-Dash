@@ -4,6 +4,9 @@ Welcome to the MERN + ESP32 Smart Home Dashboard project! This project combines 
 
 ## Screenshots
 
+![Dashboard](Screenshots/home-1.png)
+![Dashboard](Screenshots/login-1.png)
+![Dashboard](Screenshots/adminpage.png)
 ![Dashboard](Screenshots/dashboard-1.png)
 ![Dashboard](Screenshots/dashboard-2.png)
 ![Dashboard](Screenshots/dashboard-3.png)
